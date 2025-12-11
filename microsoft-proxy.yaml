@@ -1,8 +1,26 @@
 payload:
+  # ===== Bing 全服务（必须代理）=====
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,assets.msn.com
+
+  # ===== Copilot 服务 =====
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,copilot.azureedge.net
+  - DOMAIN-SUFFIX,copilot.microsoft365.com
+  - DOMAIN-SUFFIX,api.copilot.microsoft.com
+
+  # ===== Edge 浏览器 =====
+  - DOMAIN-SUFFIX,edge.microsoft.com
+  - DOMAIN-SUFFIX,edgeservices.microsoft.com
+  - DOMAIN-SUFFIX,msedge.net
+  - DOMAIN-SUFFIX,msedge.api.cdp.microsoft.com
+
   # ===== Microsoft 主域 =====
   - DOMAIN-SUFFIX,microsoft.com
   - DOMAIN-SUFFIX,msft.com
-  - DOMAIN-SUFFIX,msn.com
   - DOMAIN-SUFFIX,office.com
   - DOMAIN-SUFFIX,office365.com
   - DOMAIN-SUFFIX,windows.com
@@ -12,21 +30,7 @@ payload:
   - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,azurefd.net
 
-  # ===== Edge 浏览器 =====
-  - DOMAIN-SUFFIX,edge.microsoft.com
-  - DOMAIN-SUFFIX,edgeservices.microsoft.com
-  - DOMAIN-SUFFIX,msedge.net
-  - DOMAIN-SUFFIX,msedge.api.cdp.microsoft.com
-
-  # ===== Copilot 服务（重点代理） =====
-  - DOMAIN-SUFFIX,bing.com
-  - DOMAIN-SUFFIX,copilot.microsoft.com
-  - DOMAIN-SUFFIX,copilot.azureedge.net
-  - DOMAIN-SUFFIX,copilot.microsoft365.com
-  - DOMAIN-SUFFIX,api.copilot.microsoft.com
-  - DOMAIN-SUFFIX,assets.msn.com
-
-  # ===== Microsoft 登录认证 =====
+  # ===== 登录认证 =====
   - DOMAIN-SUFFIX,login.live.com
   - DOMAIN-SUFFIX,login.microsoftonline.com
   - DOMAIN-SUFFIX,account.microsoft.com
