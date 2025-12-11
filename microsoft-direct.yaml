@@ -1,4 +1,17 @@
 payload:
+  # ===== Outlook 直连 =====
+  - DOMAIN-SUFFIX,outlook.com
+  - DOMAIN-SUFFIX,outlook.office365.com
+
+  # ===== Teams 直连 =====
+  - DOMAIN-SUFFIX,teams.microsoft.com
+
+  # ===== OneDrive / SharePoint 直连 =====
+  - DOMAIN-SUFFIX,onedrive.com
+  - DOMAIN-SUFFIX,livefilestore.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,sharepointonline.com
+
   # OneDrive 直连
   - DOMAIN-SUFFIX,onedrive.com
   - DOMAIN-SUFFIX,1drv.ms
