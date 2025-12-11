@@ -1,0 +1,16 @@
+payload:
+  # ===== Windows Update =====
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,update.microsoft.com
+  - DOMAIN-SUFFIX,delivery.mp.microsoft.com
+
+  # ===== Windows Store =====
+  - DOMAIN-SUFFIX,storeedgefd.dsx.mp.microsoft.com
+  - DOMAIN-SUFFIX,storeedgefd.dsx.microsoft.com
+
+  # ===== 时间同步（NTP）=====
+  - DOMAIN-SUFFIX,time.windows.com
+  - DOMAIN-SUFFIX,ntp.org
+
+  # ===== 激活 / 许可证 =====
+  - DOMAIN-SUFFIX,licensing.mp.microsoft.com
