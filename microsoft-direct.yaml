@@ -1,0 +1,15 @@
+payload:
+  # OneDrive 直连
+  - DOMAIN-SUFFIX,onedrive.com
+  - DOMAIN-SUFFIX,1drv.ms
+  - DOMAIN-SUFFIX,sharepoint.com
+
+  # 微软 CDN / 更新服务直连
+  - DOMAIN-SUFFIX,msftcdn.com
+  - DOMAIN-SUFFIX,assets.microsoft.com
+  - DOMAIN-SUFFIX,static.microsoft.com
+  - DOMAIN-SUFFIX,officecdn.microsoft.com
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,update.microsoft.com
+  - DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
+  - DOMAIN-SUFFIX,storeedgefd.dsx.mp.microsoft.com
