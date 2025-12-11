@@ -18,27 +18,35 @@ function FindProxyForURL(url, host) {
         return "DIRECT";
     }
 
-    // ===== 其他微软服务走代理 =====
-    if (dnsDomainIs(host, "microsoft.com") ||
-        dnsDomainIs(host, "msedge.net") ||
-        dnsDomainIs(host, "msn.com") ||
-        dnsDomainIs(host, "live.com") ||
-        dnsDomainIs(host, "office.com") ||
-        dnsDomainIs(host, "office365.com") ||
-        dnsDomainIs(host, "xbox.com") ||
-        dnsDomainIs(host, "skype.com") ||
-        dnsDomainIs(host, "azure.com") ||
-        dnsDomainIs(host, "bing.com") ||
+    // ===== Edge Copilot 必须代理 =====
+    if (dnsDomainIs(host, "bing.com") ||
         dnsDomainIs(host, "copilot.microsoft.com") ||
         dnsDomainIs(host, "edge.microsoft.com") ||
         dnsDomainIs(host, "config.edge.microsoft.com") ||
         dnsDomainIs(host, "arc.msn.com") ||
         dnsDomainIs(host, "assets.msn.com") ||
-        dnsDomainIs(host, "api.msn.com") ||
-        dnsDomainIs(host, "microsoftonline.com")) {
-        return "PROXY 127.0.0.1:7890"; // 修改为你的代理地址和端口
+        dnsDomainIs(host, "api.msn.com")) {
+        return "PROXY 127.0.0.1:7890";
     }
 
-    // ===== 其他流量默认直连 =====
+    // ===== Outlook / OneNote 登录认证必须代理 =====
+    if (dnsDomainIs(host, "microsoftonline.com") ||
+        dnsDomainIs(host, "office.com") ||
+        dnsDomainIs(host, "office365.com") ||
+        dnsDomainIs(host, "live.com")) {
+        return "PROXY 127.0.0.1:7890";
+    }
+
+    // ===== 其他微软服务走代理 =====
+    if (dnsDomainIs(host, "microsoft.com") ||
+        dnsDomainIs(host, "msedge.net") ||
+        dnsDomainIs(host, "msn.com") ||
+        dnsDomainIs(host, "xbox.com") ||
+        dnsDomainIs(host, "skype.com") ||
+        dnsDomainIs(host, "azure.com")) {
+        return "PROXY 127.0.0.1:7890";
+    }
+
+    // ===== 其他流量默认走代理 =====
     return "PROXY 127.0.0.1:7890";
 }
