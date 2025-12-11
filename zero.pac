@@ -40,5 +40,5 @@ function FindProxyForURL(url, host) {
     }
 
     // ===== 其他流量默认直连 =====
-    return "DIRECT";
+    return "PROXY 127.0.0.1:7890";
 }
