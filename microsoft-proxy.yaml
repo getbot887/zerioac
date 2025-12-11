@@ -1,0 +1,23 @@
+payload:
+  # Edge Copilot 必须代理
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,edge.microsoft.com
+  - DOMAIN-SUFFIX,config.edge.microsoft.com
+  - DOMAIN-SUFFIX,arc.msn.com
+  - DOMAIN-SUFFIX,assets.msn.com
+  - DOMAIN-SUFFIX,api.msn.com
+
+  # Outlook / OneNote 登录认证
+  - DOMAIN-SUFFIX,microsoftonline.com
+  - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,office365.com
+  - DOMAIN-SUFFIX,live.com
+
+  # 其他微软服务
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,msedge.net
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,xbox.com
+  - DOMAIN-SUFFIX,skype.com
+  - DOMAIN-SUFFIX,azure.com
